@@ -1,72 +1,64 @@
-* {
-  font-family: helvetica,arial,sans-serif;
-}
-/*  */
-body {
-  padding: 10%;
-  background-color: #f0f0f0;
-}
-  @media only screen and (max-width: 500px) {
-    body {
-        padding: 3%;
-    }
-  }
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<base href="/" />
 
-article {
-  max-width: 800px;
-}
-/*  */
-h1, h2 {
-  margin: 2rem 0px 0px 0px;
-  padding: 0px;
-}
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>paultrott.com</title>
+  <link rel="stylesheet" type="text/css" href="contents/ui/theme/style.css">
+  <meta name='robots' content='noindex,follow' />
 
-h1 {
-  font-size: 2.8rem;
-}
-  @media only screen and (max-width: 500px) {
-    h1 {
-        font-size: 1.8rem;
-    }
-  }
 
-h2 {
-  font-size: 2rem;
-}
-  @media only screen and (max-width: 500px) {
-    h2 {
-        font-size: 1.4rem;
-    }
-  }
-/*  */
-p {
-  font-size: 1.6rem;
-  line-height: 2rem;
-}
-  @media only screen and (max-width: 500px) {
-      p {
-          font-size: 1.4rem;
-      }
-    }
 
-p.intro {
-  font-size: 1.8rem;
-  font-weight: 800;
-  line-height: 2.2rem;
-}
-  @media only screen and (max-width: 500px) {
-    p.intro {
-      font-size: 1.6rem;
-      line-height: 2rem;
-    }
-  }
-/*  */
-hr {
-  border-top: 1px dotted #8c8b8b;
-  border-bottom: 1px dotted #fff;
-  margin-top: 2rem;
-}
 
-.footer {
-  margin-top: 2rem;
-}
+<style type='text/css'>
+	#wp-admin-bar-environment-notice>div,
+	#wpadminbar { background-color: #0073AA !important }
+	#wp-admin-bar-environment-notice { display: none }
+	@media only screen and (min-width: 1030px) {
+	    #wp-admin-bar-environment-notice { display: block }
+	    #wp-admin-bar-environment-notice > div > span {
+	        /*color: #EEE !important;*/
+	        font-size: 130% !important;
+	    }
+		#wpadminbar #adminbarsearch:before, #wpadminbar .ab-icon:before, #wpadminbar .ab-item:before {
+			color: #eee !important;
+		}
+	}
+	#wpadminbar .ab-empty-item,#wpadminbar a.ab-item,#wpadminbar>#wp-toolbar span.ab-label,#wpadminbar>#wp-toolbar span.noticon{color:#eee;}
+	#adminbarsearch:before,
+	.ab-icon:before,
+	.ab-item:before { color: #EEE !important }
+</style>
+</head>
+<body>
+<!-- [x] -->
+<!-- [site title] -->
+<nav>
+  <strong><a href="">paultrott.com</a></strong> // <a href="/about/">about</a>
+</nav>
+<!-- [hamburger menu] --><article>
+	<p>Sorry, no posts matched your criteria.</p>
+
+</article>
+<!-- [x] -->
+<div class="footer">
+  <cite class="copyright">
+    <strong>&copy; Copyright       2018       Paul Trott</strong><br>
+    Views expressed are my own and do not reflect those of my employer, family or acquaintances.
+  </cite>
+</div>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-117150792-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-117150792-1');
+</script>
+
+</body>
+</html>
