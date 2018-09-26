@@ -46,12 +46,16 @@ p.intro {
 font-size: 1.8rem;
 font-weight: 800;
 line-height: 2.2rem;
+margin: .5rem 0px 0px 0px; 
 }
 @media only screen and (max-width: 500px) {
 p.intro {
 font-size: 1.6rem;
 line-height: 2rem;
 }
+}
+.home-par {
+margin: .5rem 0px 0px 0px; 
 }
 hr {
 border-top: 1px dotted #8c8b8b;
