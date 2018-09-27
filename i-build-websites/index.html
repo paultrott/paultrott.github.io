@@ -37,6 +37,13 @@
 	.ab-icon:before,
 	.ab-item:before { color: #EEE !important }
 </style>
+  <script type="text/javascript">
+    function gen_mail_to_link(lhs,rhs,subject) {
+        document.write("<a href=\"mailto");
+        document.write(":" + lhs + "@");
+        document.write(rhs + "?subject=" + subject + "\">contact me<\/a>");
+    }
+</script>
 </head>
 <body>
 <!-- [x] -->
@@ -44,6 +51,7 @@
 <nav>
   <strong><a href="">paultrott.com</a></strong> 
   // <a href="/about/">about</a> 
+  // <script type="text/javascript">gen_mail_to_link('paul.trott','gmail.com','paultrott.com - web contact');</script>
 </nav>
 <!-- [hamburger menu] --><article>
 
@@ -53,7 +61,7 @@
   <!-- [modified] -->
   <cite>September 27, 2018</cite>
   <!-- [intro] -->
-  <p class="intro">For small business that require a simple website that they can update themselves.</p>
+  <p class="intro">Generally small ones, for local business that require a simple website they can update themselves.</p>
   <p>Working in web design and development for the past 18 years,  I’ve worked with businesses of all shapes and sizes from small startups to enterprise clients spanning across many industries and around the globe.</p>
 <p>I specialise in delivering small websites powered by a modern content management system,  for a low price. My sites load very quickly on all types of devices.</p>
 <p>Perfect package for a small business looking to get online, without all the fuss.</p>
@@ -81,7 +89,7 @@ If you would like me to organise the hosting of your site,  add an extra $120 p
 <p><strong>Do you provide ongoing support &amp; maintenance?<br />
 </strong>Yes.</p>
 <p><strong>What now?<br />
-</strong>Contact me, tell me what you need and when you need it.</p>
+</strong><script type="text/javascript">gen_mail_to_link('paul.trott','gmail.com','paultrott.com - web contact');</script>, tell me what you need and when you need it.</p>
   
   <!-- [tags] -->
   <style>
@@ -96,7 +104,7 @@ If you would like me to organise the hosting of your site,  add an extra $120 p
 </article>
 <!-- [x] -->
 <h2>Contact me</h2>
-<!-- <div class="wpforms-container wpforms-container-full" id="wpforms-114"><form id="wpforms-form-114" class="wpforms-validate wpforms-form" data-formid="114" method="post" enctype="multipart/form-data" action="/i-build-websites/"><div class="wpforms-field-container"><div id="wpforms-114-field_0-container" class="wpforms-field wpforms-field-name" data-field-id="0"><label class="wpforms-field-label" for="wpforms-114-field_0">Name <span class="wpforms-required-label">*</span></label><div class="wpforms-field-row wpforms-field-medium"><div class="wpforms-field-row-block wpforms-first wpforms-one-half"><input type="text" id="wpforms-114-field_0" class="wpforms-field-name-first wpforms-field-required" name="wpforms[fields][0][first]" required><label for="wpforms-114-field_0" class="wpforms-field-sublabel after ">First</label></div><div class="wpforms-field-row-block wpforms-one-half"><input type="text" id="wpforms-114-field_0-last" class="wpforms-field-name-last wpforms-field-required" name="wpforms[fields][0][last]" required><label for="wpforms-114-field_0-last" class="wpforms-field-sublabel after ">Last</label></div></div></div><div id="wpforms-114-field_1-container" class="wpforms-field wpforms-field-email" data-field-id="1"><label class="wpforms-field-label" for="wpforms-114-field_1">Email <span class="wpforms-required-label">*</span></label><input type="email" id="wpforms-114-field_1" class="wpforms-field-medium wpforms-field-required" name="wpforms[fields][1]" required></div><div id="wpforms-114-field_2-container" class="wpforms-field wpforms-field-textarea" data-field-id="2"><label class="wpforms-field-label" for="wpforms-114-field_2">Comment or Message <span class="wpforms-required-label">*</span></label><textarea id="wpforms-114-field_2" class="wpforms-field-medium wpforms-field-required" name="wpforms[fields][2]" required></textarea></div></div><div class="wpforms-field wpforms-field-hp"><label for="wpforms-field_hp" class="wpforms-field-label">Comment</label><input type="text" name="wpforms[hp]" id="wpforms-field_hp" class="wpforms-field-medium"></div><div class="wpforms-submit-container" ><input type="hidden" name="wpforms[id]" value="114"><input type="hidden" name="wpforms[author]" value="0"><input type="hidden" name="wpforms[post_id]" value="88"><button type="submit" name="wpforms[submit]" class="wpforms-submit " id="wpforms-submit-114" value="wpforms-submit" data-alt-text="Sending...">Submit</button></div></form></div> -->
+<!-- <div class="wpforms-container wpforms-container-full" id="wpforms-114"><form id="wpforms-form-114" class="wpforms-validate wpforms-form" data-formid="114" method="post" enctype="multipart/form-data" action="/i-build-websites/"><div class="wpforms-field-container"><div id="wpforms-114-field_0-container" class="wpforms-field wpforms-field-name" data-field-id="0"><label class="wpforms-field-label" for="wpforms-114-field_0">Name <span class="wpforms-required-label">*</span></label><div class="wpforms-field-row wpforms-field-medium"><div class="wpforms-field-row-block wpforms-first wpforms-one-half"><input type="text" id="wpforms-114-field_0" class="wpforms-field-name-first wpforms-field-required" name="wpforms[fields][0][first]" required><label for="wpforms-114-field_0" class="wpforms-field-sublabel after ">First</label></div><div class="wpforms-field-row-block wpforms-one-half"><input type="text" id="wpforms-114-field_0-last" class="wpforms-field-name-last wpforms-field-required" name="wpforms[fields][0][last]" required><label for="wpforms-114-field_0-last" class="wpforms-field-sublabel after ">Last</label></div></div></div><div id="wpforms-114-field_1-container" class="wpforms-field wpforms-field-email" data-field-id="1"><label class="wpforms-field-label" for="wpforms-114-field_1">Email <span class="wpforms-required-label">*</span></label><input type="email" id="wpforms-114-field_1" class="wpforms-field-medium wpforms-field-required" name="wpforms[fields][1]" required></div><div id="wpforms-114-field_2-container" class="wpforms-field wpforms-field-textarea" data-field-id="2"><label class="wpforms-field-label" for="wpforms-114-field_2">Comment or Message <span class="wpforms-required-label">*</span></label><textarea id="wpforms-114-field_2" class="wpforms-field-medium wpforms-field-required" name="wpforms[fields][2]" required></textarea></div></div><div class="wpforms-field wpforms-field-hp"><label for="wpforms-field_hp" class="wpforms-field-label">Name</label><input type="text" name="wpforms[hp]" id="wpforms-field_hp" class="wpforms-field-medium"></div><div class="wpforms-submit-container" ><input type="hidden" name="wpforms[id]" value="114"><input type="hidden" name="wpforms[author]" value="0"><input type="hidden" name="wpforms[post_id]" value="88"><button type="submit" name="wpforms[submit]" class="wpforms-submit " id="wpforms-submit-114" value="wpforms-submit" data-alt-text="Sending...">Submit</button></div></form></div> -->
 
 <div class="footer">
   <cite class="copyright">

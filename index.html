@@ -32,6 +32,13 @@
 	.ab-icon:before,
 	.ab-item:before { color: #EEE !important }
 </style>
+  <script type="text/javascript">
+    function gen_mail_to_link(lhs,rhs,subject) {
+        document.write("<a href=\"mailto");
+        document.write(":" + lhs + "@");
+        document.write(rhs + "?subject=" + subject + "\">contact me<\/a>");
+    }
+</script>
 </head>
 <body>
 <!-- [x] -->
@@ -39,6 +46,7 @@
 <nav>
   <strong><a href="">paultrott.com</a></strong> 
   // <a href="/about/">about</a> 
+  // <script type="text/javascript">gen_mail_to_link('paul.trott','gmail.com','paultrott.com - web contact');</script>
 </nav>
 <!-- [hamburger menu] --><article>
   <!-- [FEATURE] -->
@@ -47,7 +55,7 @@
   <!-- [modified] -->
   <cite>September 27, 2018</cite>
   <!-- [intro] -->
-  <p class="intro">For small business that require a simple website that they can update themselves.</p>
+  <p class="intro">Generally small ones, for local business that require a simple website they can update themselves.</p>
   <!-- [tags] -->
   <!-- <style>
 .tag-pad {
