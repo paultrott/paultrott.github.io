@@ -2,14 +2,17 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
-   width="960"
-   height="999.67194"
-   viewBox="0 0 960 999.67194"
+   width="839.71246"
+   height="843.74365"
+   viewBox="0 0 839.71246 843.74366"
    version="1.1"
    id="svg1"
    inkscape:version="1.3.1 (91b66b0783, 2023-11-16)"
-   sodipodi:docname="logo_0.svg"
+   sodipodi:docname="fapow.svg"
    xml:space="preserve"
+   inkscape:export-filename="..\..\OneDrive\Pictures\Wallpaper-4k\retro\fapow2.png"
+   inkscape:export-xdpi="48.016438"
+   inkscape:export-ydpi="48.016438"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
@@ -25,26 +28,27 @@
      inkscape:document-units="px"
      showgrid="false"
      showguides="true"
-     inkscape:zoom="0.95231243"
-     inkscape:cx="1422.8524"
-     inkscape:cy="1477.4563"
-     inkscape:current-layer="layer1"><sodipodi:guide
-       position="-668.93391,2205.681"
+     inkscape:zoom="0.47615622"
+     inkscape:cx="195.31405"
+     inkscape:cy="724.55213"
+     inkscape:current-layer="layer1"
+     showborder="false"><sodipodi:guide
+       position="-735.76031,2049.7527"
        orientation="0,1920"
        id="guide1"
        inkscape:locked="false" /><sodipodi:guide
-       position="960,3437.6799"
+       position="893.1736,3281.7516"
        orientation="1080,0"
        id="guide2"
        inkscape:locked="false" /><sodipodi:guide
-       position="-960,2357.6799"
+       position="-1026.8264,2201.7516"
        orientation="-1080,0"
        id="guide4"
        inkscape:locked="false" /><inkscape:grid
        type="axonomgrid"
        id="grid4"
        units="mm"
-       originx="-960"
+       originx="-1026.8264"
        originy="-2357.6799"
        spacingx="0"
        spacingy="3.7795276"
@@ -60,7 +64,7 @@
        enabled="false" /><inkscape:grid
        id="grid5"
        units="px"
-       originx="-960"
+       originx="-1026.8264"
        originy="-2357.6799"
        spacingx="8"
        spacingy="8"
@@ -74,7 +78,7 @@
        gridanglez="30"
        visible="false"
        enabled="true" /><sodipodi:guide
-       position="-698.63453,1125.681"
+       position="-765.46093,969.75272"
        orientation="0,-1"
        id="guide14"
        inkscape:locked="false" /></sodipodi:namedview><defs
@@ -82,7 +86,7 @@
      inkscape:groupmode="layer"
      id="layer1"
      inkscape:label="Export"
-     transform="translate(-960,-1125.681)"><g
+     transform="translate(-1026.8264,-1125.681)"><g
        id="g19"
        inkscape:label="Logo-Black"
        style="display:inline"
