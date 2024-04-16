@@ -6,16 +6,7 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>FAPOW - randomly generated indie game developer</title>
-     
-</head>
-<body>
-   
-    <div class="center">
-        <img src="logo_3.png" alt="FAPOW logo" style="">
-        <p style="margin-top: 4em; font-family: slkscr,sans-serif; line-height: 1.2em; color: #FFF;">randomly generated<br>indie game developer</p>
-    </div>
-   
-<style>
+    <style>
         @font-face {
             font-family: 'slkscr';
             src: url('slkscr.ttf') format('truetype');
@@ -26,7 +17,7 @@
             align-items: center;
             height: 100vh;
             margin: 0;
-            background-color: #000;
+
   
         }
   
@@ -51,17 +42,11 @@
             background-size: 400% 400%;
             animation: gradient 25s ease-in-out infinite;
             height: 100vh;
-            --dot-bg: black;
-            --dot-color: #7C7C7C;
-            --dot-size: 1px;
-            --dot-space: 22px;
             background:
-                    linear-gradient(90deg, var(--dot-bg) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center / var(--dot-space) var(--dot-space),
-                    linear-gradient(var(--dot-bg) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center / var(--dot-space) var(--dot-space),
-                    var(--dot-color);
-  
-            
-        }
+                linear-gradient(90deg, #000 21px, transparent 1%) center / 22px 22px,
+                linear-gradient(black 21px, transparent 1%) center / 22px 22px,
+                #7C7C7C;
+            }
   
         @keyframes gradient {
             0% {
@@ -74,6 +59,14 @@
                 background-position: 0 50%;
             }
         }
-    </style> 
+    </style>  
+</head>
+<body>
+   
+    <div class="center">
+        <img src="logo_3.png" alt="FAPOW logo" style="">
+        <p style="margin-top: 4em; font-family: slkscr,sans-serif; line-height: 1.2em; color: #FFF;">randomly generated<br>indie game developer</p>
+    </div>
+   
 </body>
 </html>
