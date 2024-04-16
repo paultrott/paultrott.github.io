@@ -5,75 +5,73 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Fapow</title>
-    <!--
-
-    -->
+    <title>FAPOW - randomly generated indie game developer</title>
+    <style>
+        @font-face {
+            font-family: 'slkscr';
+            src: url('slkscr.ttf') format('truetype');
+        }
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #000;
+  
+        }
+  
+        .center {
+            text-align: center;
+        }
+  
+        .center img {
+            max-width: 100%;
+            max-height: 100%;
+            vertical-align: middle;
+  
+  
+        }
+        p{
+            margin: 0;
+            padding: 0;
+        }
+  
+        body {
+            /*background: linear-gradient(-45deg, #000000, #1A1A1A, #2E2E2E);*/
+            background-size: 400% 400%;
+            animation: gradient 25s ease-in-out infinite;
+            height: 100vh;
+            --dot-bg: black;
+            --dot-color: #7C7C7C;
+            --dot-size: 1px;
+            --dot-space: 22px;
+            background:
+                    linear-gradient(90deg, var(--dot-bg) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center / var(--dot-space) var(--dot-space),
+                    linear-gradient(var(--dot-bg) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center / var(--dot-space) var(--dot-space),
+                    var(--dot-color);
+  
+            color: #FFF;
+        }
+  
+        @keyframes gradient {
+            0% {
+                background-position: 0 50%;
+            }
+            50% {
+                background-position: 50% 50%;
+            }
+            100% {
+                background-position: 0 50%;
+            }
+        }
+    </style>  
 </head>
 <body>
-   <style>
-       @font-face {
-           font-family: 'slkscr';
-           src: url('slkscr.ttf') format('truetype');
-       }
-       body {
-           display: flex;
-           justify-content: center;
-           align-items: center;
-           height: 100vh;
-           margin: 0;
-           background-color: #000;
-           
-       }
-
-       .center {
-           text-align: center;
-       }
-
-       .center img {
-           max-width: 100%;
-           max-height: 100%;
-           vertical-align: middle;
-           
-           
-       }
-       p{
-           margin: 0;
-           padding: 0;
-       }
-
-       body {
-           /*background: linear-gradient(-45deg, #000000, #1A1A1A, #2E2E2E);*/
-           background-size: 400% 400%;
-           animation: gradient 25s ease-in-out infinite;
-           height: 100vh;
-           --dot-bg: black;
-           --dot-color: #7C7C7C;
-           --dot-size: 1px;
-           --dot-space: 22px;
-           background:
-                   linear-gradient(90deg, var(--dot-bg) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center / var(--dot-space) var(--dot-space),
-                   linear-gradient(var(--dot-bg) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center / var(--dot-space) var(--dot-space),
-                   var(--dot-color);
-           
-           color: #FFF;
-       }
-
-       @keyframes gradient {
-           0% {
-               background-position: 0% 50%;
-           }
-           50% {
-               background-position: 50% 50%;
-           }
-           100% {
-               background-position: 0% 50%;
-           }
-       }
-    </style>
+   
     <div class="center">
         <img src="logo_3.png" alt="FAPOW logo" style="">
-        <p style="margin-top: 4em; font-family: slkscr; line-height: 1.2em; ">randomly generated<br>indie game developer</p>
+        <p style="margin-top: 4em; font-family: slkscr,sans-serif; line-height: 1.2em;">randomly generated<br>indie game developer</p>
     </div>
    
 </body>
