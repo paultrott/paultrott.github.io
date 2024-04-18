@@ -115,8 +115,8 @@
           return alphabet[randomIndex];
       }
 
-      function getRandomTime() {
-          return Math.floor(Math.random() * 2000) + 500; // Random time between 500ms and 2500ms
+      function getRandomTime(min = 500, max = 2500) {
+          return Math.floor(Math.random() * max) + min; // Random time between 500ms and 2500ms
       }
 
       function getRandomPosition() {
@@ -155,7 +155,7 @@
               charElement.textContent = newCharacter;
               charElement.style.opacity = opacity;
               opacity -= 0.4; // Reduce opacity by 0.25 each time
-          }, 500); // Change character every 500ms
+          }, getRandomTime(500,1000)); // Change character every 500ms
 
           setTimeout(() => {
               clearInterval(interval);
@@ -171,7 +171,7 @@
       }
 
       // Usage
-      spawnMultipleCharacters(Math.floor(Math.random() * 20) + 10); // Spawns between 10 to 29 characters
+      spawnMultipleCharacters(Math.floor(Math.random() * 60) + 10); // Spawns between 10 to 29 characters
 
   </script>
   </body>
