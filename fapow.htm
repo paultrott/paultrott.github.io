@@ -13,12 +13,17 @@
         font-family: "slkscr";
         src: url("slkscr.ttf") format("truetype");
       }
+      @font-face {
+          font-family: "braille";
+          src: url("braille.ttf") format("truetype");
+      }
       body {
         display: flex;
         justify-content: center;
         align-items: center;
         height: 100vh;
         margin: 0;
+        overflow: hidden;
       }
 
       .center {
@@ -69,7 +74,6 @@
     <div class="center">
       <img src="fapow2.png" class="LPos" alt="FAPOW logo" style=""/>
       <p class="rando">
-<!--        <img src="text1.png" alt="FAPOW blerb"  style="width: 50%;"/>-->
         RANDOMLY GENERATED<br/>SOLO GAME DEVELOPER
       </p>
         <script>
@@ -103,5 +107,72 @@
             animateElements();
           </script>
     </div>
+  
+  <script>
+      function getRandomCharacter() {
+          const alphabet = 'abcdefghijklmnopqrstuvwxyz';
+          const randomIndex = Math.floor(Math.random() * alphabet.length);
+          return alphabet[randomIndex];
+      }
+
+      function getRandomTime() {
+          return Math.floor(Math.random() * 2000) + 500; // Random time between 500ms and 2500ms
+      }
+
+      function getRandomPosition() {
+          const screenWidth = window.innerWidth;
+          const screenHeight = window.innerHeight;
+
+          let x, y;
+          do {
+              x = Math.random() * screenWidth;
+              y = Math.random() * screenHeight;
+          } while (x > screenWidth / 2 - 150 && x < screenWidth / 2 + 150 && y > screenHeight / 2 - 150 && y < screenHeight / 2 + 150);
+
+          return { x, y };
+      }
+
+      function createRandomCharacter() {
+          const character = getRandomCharacter();
+          const time = getRandomTime();
+          const position = getRandomPosition();
+
+          const charElement = document.createElement('div');
+          charElement.textContent = character;
+          charElement.style.position = 'absolute';
+          charElement.style.left = position.x + 'px';
+          charElement.style.top = position.y + 'px';
+          charElement.style.fontSize = '24px';
+          charElement.style.color = '#FFF';
+          charElement.style.fontFamily = 'Braille';
+          charElement.classList.add('random-character');
+          
+          document.body.appendChild(charElement);
+
+          let opacity = 1; // Initial opacity
+          const interval = setInterval(() => {
+              const newCharacter = getRandomCharacter();
+              charElement.textContent = newCharacter;
+              charElement.style.opacity = opacity;
+              opacity -= 0.4; // Reduce opacity by 0.25 each time
+          }, 500); // Change character every 500ms
+
+          setTimeout(() => {
+              clearInterval(interval);
+              charElement.remove();
+              setTimeout(createRandomCharacter, getRandomTime()); // Wait for a random amount of time before spawning a new character
+          }, time);
+      }
+
+      function spawnMultipleCharacters(numCharacters) {
+          for (let i = 0; i < numCharacters; i++) {
+              createRandomCharacter();
+          }
+      }
+
+      // Usage
+      spawnMultipleCharacters(Math.floor(Math.random() * 20) + 10); // Spawns between 10 to 29 characters
+
+  </script>
   </body>
 </html>
